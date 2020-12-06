@@ -2,3 +2,5 @@
 *.iml
 *.html
 *.xml
+
+out/
