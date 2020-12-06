@@ -11,7 +11,7 @@ public class Main {
 	    float f = 32.85f;
 	    double d = 75.23;
 	    char c = 'g'; // or 103
-		boolean bool = true; // or false
+	    boolean bool = true; // or false
     }
 
     // № 3  Написать метод, вычисляющий выражение a * (b + (c / d)) и возвращающий результат,
@@ -20,7 +20,7 @@ public class Main {
 		return a * (b + (c / d));
 	}
 
-	// № 4  Написать метод, принимающий на вход два целых числа и проверяющий,
+    // № 4  Написать метод, принимающий на вход два целых числа и проверяющий,
     //      что их сумма лежит в пределах от 10 до 20 (включительно), если да – вернуть true,
     //      в противном случае – false.
 	public static boolean expressionRange(int a, int b) {
