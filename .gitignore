@@ -4,3 +4,5 @@
 *.xml
 
 out/
+*.pb
+.idea/*

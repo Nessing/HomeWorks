@@ -16,9 +16,9 @@ public class Main {
         int userNum;
         guessNumber();
         // вопрос на повтор или завершение игры
+        reader = new BufferedReader(new InputStreamReader(System.in));
         while (true) {
             System.out.println("Повторить игру еще раз?\n 1 - \"да\" / 0 - \"нет\"");
-            reader = new BufferedReader(new InputStreamReader(System.in));
             userNum = Integer.parseInt(reader.readLine());
             if (userNum == 1) {
                 guessNumber();
@@ -76,16 +76,15 @@ public class Main {
         String word = words[randomWord];
         int countLetters;
         System.out.println("Слово загадано, отгадайте его");
+        reader = new BufferedReader(new InputStreamReader(System.in));
         while (true) {
-            reader = new BufferedReader(new InputStreamReader(System.in));
             writedWord = reader.readLine();
             // проверка введенного слова
             if (writedWord.equals(word)) break;
                 // проверка правильно отгаданных букв и их месторасположение
             else {
                 // определение наиболее короткого слова (введенное от загаданного), для цикла проверки по буквам
-                if (writedWord.length() < word.length()) countLetters = writedWord.length();
-                else countLetters = word.length();
+                countLetters = Math.min(writedWord.length(), word.length());
                 // проверка по буквам
                 for (int j = 0; j < countLetters; j++) {
                     if (writedWord.charAt(j) == word.charAt(j)) System.out.print(word.charAt(j));
@@ -98,6 +97,6 @@ public class Main {
                 System.out.println();
             }
         }
-        System.out.println("Вы отгодали слово: " + word);
+        System.out.print("Вы отгодали слово: " + word);
     }
 }
