@@ -4,6 +4,4 @@
 *.xml
 
 out/
-.idea/shelf/Default_Changelist/shelved.patch
-.idea/sonarlint/issuestore/7/c/7c2735920e385a5e2e6954ae8e36cd1866b416fc
-.idea/sonarlint/issuestore/index.pb
+.idea/*
