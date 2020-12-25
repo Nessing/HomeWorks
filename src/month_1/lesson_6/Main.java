@@ -7,8 +7,8 @@ public class Main {
     public static void main(String[] args) {
         Dog dog1 = new Dog("Frank");
         Dog dog2 = new Dog("Sting");
-        Cat cat1 = new Cat("Tomas");
-        Cat cat2 = new Cat("Matthew");
+        Cat cat1 = new Cat("Matthew");
+        Cat cat2 = new Cat("Tomas");
 
         dog1.run(487);
         dog2.run(684);
